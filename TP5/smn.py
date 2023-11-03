@@ -63,7 +63,6 @@ smn_values_to_row = dict(
 
 def _rawdata_to_df(raw, var=None):
     if not var:
-        print("")
         return None
     lines = raw.split("\n")
     df = pd.DataFrame(columns=smn_columns[var])
